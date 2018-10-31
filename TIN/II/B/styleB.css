@@ -1,0 +1,110 @@
+@font-face {
+    font-family: segoe;
+    src: url(SegoeUI.ttf);
+}
+
+@font-face {
+    font-family: in;
+    src: url(InfraRed.ttf);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: "header  header  header" 
+                          "sidebar content content"
+                          "sidebar content content"
+                          "sidebar content content"
+                          "footer  footer  footer";
+}
+
+.box {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: in;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    width: auto;
+    column-width: 250px;
+    column-count: 5;
+    font-family: segoe;
+    font-size: 17px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#headerImage {
+    margin-top: 20px;
+    transform: rotate(2deg);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#image {
+    padding: 8px;
+    float: left;
+}
+
+#imageR {
+    padding: 8px;
+    float: right;
+}
+
+.pquote {
+    float: right;
+    width: 150px;
+    background: url(mark.png) top left no-repeat;
+    background-size: 60px 60px;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 13px;
+    font-family: in;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.pquote p:first-letter {
+    font-size: 39px;
+    font-weight: bold;
+}
+
+@media only screen and (max-device-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-areas: "header"
+                              "content"
+                              "sidebar"
+                              "footer";
+    }
+    .content {
+        grid-area: content;
+        width: auto;
+        column-width: 250px;
+        column-count: 1;
+        font-family: segoe;
+    }
+}
