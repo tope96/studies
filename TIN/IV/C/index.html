@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="Stylesheet" type="text/css" href="styleC.css">
+    <script type="text/javascript" src="cS.js" async></script>
+    <meta charset="utf-8">
+    <title>C</title>
+</head>
+
+<body>
+    <h1>Formularz zgłoszeniowy</h1>
+    <form>
+        <p><label>Imię:</label> <input type="text" id="name"></p>
+        <p><label>Nazwisko:</label> <input type="text" id="sName"></p>
+        <button type="button" onclick="add(document.getElementById('name').value, document.getElementById('sName').value)">Zatwierdź</button>
+    </form>
+    <br />
+    <table id="myTable" border="2">
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>Kowalski</td>
+        </tr>
+    </table>
+    <br />
+
+</body>
+
+</html>
