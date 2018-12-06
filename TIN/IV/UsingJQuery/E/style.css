@@ -1,0 +1,31 @@
+body{
+    background-image: url("background.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+input{
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+} 
+
+
+table{
+    visibility: hidden;
+   margin-top: 20px;
+   table-layout: fixed;
+}
+
+#gra{
+    visibility: hidden;
+}
+
+h1{
+    margin-bottom: 30px;
+}

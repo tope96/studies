@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="Stylesheet" type="text/css" href="style.css">
+    <script src="index.js" defer></script>
+    <title>E</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="font-weight-bold text-white">Zarządzanie studentem</h1>
+
+        <form>
+            <div class="form-group row">
+                <div class="col">
+                    <p><label for="fName">Imię:</label> <input type="text" id="fName"></p>
+                    <p><label for="sName">Nazwisko:</label> <input type="text" id="sName"></p>
+                    <p><label for="if">ID:</label> <input type="number" id="id"></p>
+                    <button class="btn btn-light" type="button" id="save">Zapisz</button>
+                </div>
+            </div>
+        </form>
+
+        <form id="gra">
+            <div class="form-group row">
+                <div class="col">
+                    <p>Dodaj ocenę: <input type="number" id="gradesForm"> <button class="btn btn-sm btn-light" type="button"
+                            id="addGrade">Dodaj</button>
+                    </p>
+                </div>
+            </div>
+        </form>
+
+        <table class="table" id="myTable">
+            <tr>
+                <th scope="col">Imię</th>
+                <th scope="col">Nazwisko</th>
+                <th scope="col">ID</th>
+                <th scope="col">Oceny</th>
+                <th scope="col">Średnia ocen</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
