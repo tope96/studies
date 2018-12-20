@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    text-align: center;
+}
+
+#buttonSubmit{
+    background-color: white;
+    margin: 20px;
+}
+
+#data{
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+    size: 40px;
+}
